@@ -1,0 +1,25 @@
+@media (max-width:900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:640px) {
+    .cards-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:900px) {
+    .product-page {
+        grid-template-columns: 1fr
+    }
+}

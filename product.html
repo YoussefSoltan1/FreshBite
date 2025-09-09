@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FreshBite | Product</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="./index.html">
+            <img src="./images/logo.jpg" alt="FreshBite logo" />
+            <span>FreshBite</span>
+        </a>
+        <nav aria-label="Primary">
+            <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./products.html">Shop</a></li>
+                <li><a href="./cart.html" class="btn btn-outline">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container product-page">
+        <div class="product-gallery">
+            <img src="./images/product-1.jpg" alt="Close-up of Artisan Sourdough bread loaf" />
+        </div>
+        <div class="product-info">
+            <h1>Artisan Sourdough</h1>
+            <p class="price large">$5.90</p>
+            <p>Long-fermented sourdough with a crisp crust and open crumb. Baked daily with natural starter, flour,
+                water, and salt.</p>
+
+            <form action="./cart.html" method="get" class="controls">
+                <label for="qty">Quantity</label>
+                <select id="qty" name="qty" aria-label="Quantity">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <button class="btn btn-primary" type="submit">Add to cart</button>
+            </form>
+
+            <dl class="specs">
+                <dt>Allergens</dt>
+                <dd>Gluten</dd>
+                <dt>Weight</dt>
+                <dd>500 g</dd>
+                <dt>Ingredients</dt>
+                <dd>Flour, water, salt, starter</dd>
+            </dl>
+
+            <div class="meta muted small">SKU: BR-001 • Category: Breads</div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p class="muted small container">© 2025 FreshBite</p>
+    </footer>
+</body>
+
+</html>

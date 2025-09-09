@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FreshBite | Food & Beverage</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./images/icon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./media.css">
+  <meta name="description"
+    content="FreshBite: online shop for fresh food and beverages. Healthy, fast, and delivered." />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="./index.html">
+      <img src="./images/logo.jpg" alt="FreshBite logo" />
+      <span>FreshBite</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./products.html">Shop</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="./cart.html" class="btn btn-outline">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" role="banner" aria-label="Fresh & healthy hero">
+      <div class="hero__content">
+        <h1>Eat fresh. Drink clean. Feel great.</h1>
+        <p>Curated food and beverage picks, delivered fast. Seasonal, sustainable, and delicious.</p>
+        <a class="btn btn-primary" href="./products.html">Shop now</a>
+      </div>
+      <figure class="hero__image">
+        <img src="./images/hero.jpg" alt="Fresh vegetables and juices on a wooden table" />
+      </figure>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="section__head">
+        <h2>Shop by category</h2>
+        <p>Find your favorites across our most-loved aisles.</p>
+      </div>
+      <div class="grid cards-3">
+        <a class="categories-cards cat" href="./products.html#breads" aria-label="Browse breads">
+          <h3>Breads</h3>
+          <p>Sourdough, baguettes, gluten-free.</p>
+        </a>
+        <a class="categories-cards cat" href="./products.html#beverages" aria-label="Browse beverages">
+          <h3>Beverages</h3>
+          <p>Cold-pressed juices, coffee, teas.</p>
+        </a>
+        <a class="categories-cards cat" href="./products.html#snacks" aria-label="Browse snacks">
+          <h3>Snacks</h3>
+          <p>Healthy bites for any time.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Featured picks</h2>
+        <p>Staff favorites this week.</p>
+      </div>
+      <div class="grid cards-3">
+        <article class="card product">
+          <img src="./images/product-1.jpg" alt="Artisan Sourdough Bread" />
+          <div class="product__body">
+            <h3><a href="./product.html">Artisan Sourdough</a></h3>
+            <p class="muted">Crisp crust, airy crumb. Fermented 36 hours.</p>
+            <div class="price-row">
+              <span class="price">$5.90</span>
+              <a class="btn btn-sm" href="./cart.html">Add to cart</a>
+            </div>
+          </div>
+        </article>
+        <article class="card product">
+          <img src="./images/product-2.jpg" alt="Cold-Pressed Green Juice" />
+          <div class="product__body">
+            <h3><a href="./product.html">Green Glow Juice</a></h3>
+            <p class="muted">Kale, apple, lemon, ginger. No added sugar.</p>
+            <div class="price-row">
+              <span class="price">$4.50</span>
+              <a class="btn btn-sm" href="./cart.html">Add to cart</a>
+            </div>
+          </div>
+        </article>
+        <article class="card product">
+          <img src="./images/product-3.jpg" alt="Roasted Almonds" />
+          <div class="product__body">
+            <h3><a href="./product.html">Roasted Almonds</a></h3>
+            <p class="muted">Lightly salted, small-batch roast.</p>
+            <div class="price-row">
+              <span class="price">$3.20</span>
+              <a class="btn btn-sm" href="./cart.html">Add to cart</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="cta">
+        <h2>Subscribe and save 10%</h2>
+        <p>Get weekly picks and early access to seasonal drops.</p>
+        <form class="inline-form" action="#" method="post">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="./index.html">
+          <img src="./images/logo.jpg" alt="" aria-hidden="true" />
+          <span>FreshBite</span>
+        </a>
+        <p class="muted">Seasonal food & beverages delivered with care.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="./products.html">Shop</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="muted small">© 2025 FreshBite. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

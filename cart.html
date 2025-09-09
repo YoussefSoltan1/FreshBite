@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FreshBite | Cart</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="./index.html">
+            <img src="./images/logo.jpg" alt="FreshBite logo" />
+            <span>FreshBite</span>
+        </a>
+        <nav aria-label="Primary">
+            <ul class="nav">
+                <li><a href="./products.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Your cart</h1>
+
+        <table class="cart-table" role="table">
+            <thead>
+                <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cart-item">
+                            <img src="./images/product-1.jpg" alt="Artisan Sourdough" />
+                            <div>
+                                <strong>Artisan Sourdough</strong>
+                                <div class="muted small">BR-001</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$5.90</td>
+                    <td>1</td>
+                    <td>$5.90</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="3" class="right">Total</th>
+                    <td><strong>$5.90</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <form class="checkout-form">
+            <h2>Checkout</h2>
+            <div class="grid form-grid">
+                <div>
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" required />
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input id="address" name="address" type="text" required />
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input id="city" name="city" type="text" required />
+                </div>
+                <div>
+                    <label for="zip">ZIP</label>
+                    <input id="zip" name="zip" type="text" required />
+                </div>
+                <div class="full">
+                    <label for="notes">Order notes</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="Delivery notes..."></textarea>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Place order</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <p class="muted small container">© 2025 FreshBite</p>
+    </footer>
+</body>
+
+</html>
